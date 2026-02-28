@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlatMagic Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <section class="card">
+        <h1>FlatMagic</h1>
+        <label for="service-url">Service URL</label>
+        <div class="row">
+          <input id="service-url" type="text" value="http://127.0.0.1:8765" />
+          <button id="ping-service" type="button">Ping</button>
+        </div>
+        <p id="service-status" class="hint">Service not checked yet.</p>
+      </section>
+
+      <section class="card">
+        <h2>Layer Selection</h2>
+        <div class="row">
+          <button id="refresh-layers" type="button">Refresh Layers</button>
+        </div>
+        <label for="layer-select">Pixel Layer</label>
+        <select id="layer-select"></select>
+      </section>
+
+      <section class="card">
+        <h2>Detection</h2>
+        <div class="row">
+          <button id="analyze-layer" type="button">Analyze</button>
+          <label class="inline-checkbox">
+            <input id="preview-toggle" type="checkbox" />
+            Preview Result Layer
+          </label>
+        </div>
+        <p id="analysis-summary" class="hint">No analysis yet.</p>
+        <div id="proposal-list" class="proposal-list"></div>
+      </section>
+
+      <section class="card">
+        <h2>Actions</h2>
+        <div class="row">
+          <button id="apply-selected" type="button">Apply Selected</button>
+          <button id="rollback-session" type="button">Rollback Session</button>
+        </div>
+        <div class="row">
+          <button id="export-audit" type="button">Export Audit Log</button>
+        </div>
+      </section>
+
+      <p id="status-line" class="status-line">Ready.</p>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

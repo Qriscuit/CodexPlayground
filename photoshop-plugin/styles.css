@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #17191e;
+  color: #f2f4f8;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid #3a4356;
+  border-radius: 8px;
+  padding: 10px;
+  background: #222734;
+}
+
+h1,
+h2 {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  border: 1px solid #49526a;
+  border-radius: 6px;
+  background: #151820;
+  color: #f2f4f8;
+  padding: 6px;
+}
+
+button {
+  border: 1px solid #5f74b5;
+  background: #2f4ca7;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3a5cc5;
+}
+
+.proposal-list {
+  max-height: 220px;
+  overflow: auto;
+  border: 1px solid #49526a;
+  border-radius: 6px;
+  padding: 8px;
+  background: #151820;
+}
+
+.proposal-item {
+  border-bottom: 1px solid #2d3445;
+  padding: 6px 0;
+}
+
+.proposal-item:last-child {
+  border-bottom: none;
+}
+
+.proposal-title {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.proposal-meta {
+  font-size: 11px;
+  color: #b7c2df;
+}
+
+.hint {
+  margin: 0;
+  color: #c1c8d8;
+  font-size: 12px;
+}
+
+.inline-checkbox {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+.status-line {
+  margin: 0;
+  font-size: 12px;
+  border: 1px solid #3a4356;
+  border-radius: 8px;
+  padding: 8px;
+  background: #11141b;
+}
